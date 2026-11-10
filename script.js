@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 (() => {
   'use strict';
   const menu = document.querySelector('.menu-button');
@@ -96,3 +97,6 @@
     }));
   }
 })();
+=======
+document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.menu-button'),n=document.querySelector('.site-nav');if(b&&n){b.addEventListener('click',()=>{const open=n.classList.toggle('open');b.setAttribute('aria-expanded',String(open))});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}))}});
+>>>>>>> Stashed changes

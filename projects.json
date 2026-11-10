@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< Updated upstream
     "id": "sheet-metal-enclosure",
     "cat": "mechanical",
     "title": "Industrial Sheet Metal Enclosure",
@@ -54,6 +55,8 @@
     ]
   },
   {
+=======
+>>>>>>> Stashed changes
     "id": "industrial",
     "cat": "mechanical",
     "title": "Industrial Expansion Joints | Design Practice",
