@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#172c37"/><text x="7" y="43" fill="#f8f5ed" font-family="Arial,sans-serif" font-size="36" font-weight="700" letter-spacing="-5">rb</text><circle cx="53" cy="43" r="4" fill="#db603d"/></svg>
-=======
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" rx="17" fill="#0B2034"/><path d="M14 46V18h18c10 0 15 12 6 18l12 10H35L23 35v11zM23 25v5h9c4 0 4-5 0-5z" fill="#67DED1"/></svg>
->>>>>>> Stashed changes
