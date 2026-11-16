@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="t d">
+<title id="t">Planetary gearbox - assembled arrangement schematic</title>
+<desc id="d">Interpretive technical drawing based on the author's SolidWorks general assembly drawing, not a CAD screenshot or physical prototype.</desc>
+<defs>
+<linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5f8f8"/><stop offset="1" stop-color="#e7edef"/></linearGradient>
+<linearGradient id="shell" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#57778b"/><stop offset=".36" stop-color="#315a70"/><stop offset=".78" stop-color="#223e52"/><stop offset="1" stop-color="#162b3b"/></linearGradient>
+<linearGradient id="flange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#668aa1"/><stop offset="1" stop-color="#1e3b4f"/></linearGradient>
+<linearGradient id="shaft" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d6d5c7"/><stop offset=".46" stop-color="#8d958c"/><stop offset="1" stop-color="#515e60"/></linearGradient>
+<radialGradient id="face"><stop stop-color="#59788c"/><stop offset=".65" stop-color="#2e556c"/><stop offset="1" stop-color="#172e41"/></radialGradient>
+</defs>
+<rect width="1200" height="700" fill="url(#bg)"/>
+<g stroke="#c9d4d9" stroke-width="1" opacity=".65"><path d="M70 110H1130 M70 590H1130 M100 70V630 M1100 70V630"/></g>
+<text x="78" y="85" fill="#294d61" font-family="Arial,sans-serif" font-size="21" font-weight="bold" letter-spacing="2">ASSEMBLED CONFIGURATION</text>
+<text x="78" y="115" fill="#5a7180" font-family="Arial,sans-serif" font-size="14">Interpretive arrangement derived from SolidWorks assembly drawing · Not a CAD screenshot</text>
+<ellipse cx="550" cy="567" rx="340" ry="48" fill="#6b8390" opacity=".13"/>
+<path d="M668 169L836 239L775 454L598 386Z" fill="url(#flange)" stroke="#152d41" stroke-width="6" stroke-linejoin="round"/>
+<path d="M694 203L805 247L757 411L644 366Z" fill="none" stroke="#96b3c2" stroke-width="4" opacity=".55"/>
+<g fill="#10283b" stroke="#8da6b4" stroke-width="4"><ellipse cx="688" cy="191" rx="9" ry="8"/><ellipse cx="817" cy="248" rx="9" ry="8"/><ellipse cx="769" cy="438" rx="9" ry="8"/><ellipse cx="616" cy="382" rx="9" ry="8"/></g>
+<path d="M330 254L669 170C765 161 822 237 805 326L776 410L441 523Z" fill="url(#shell)" stroke="#162c3d" stroke-width="6"/>
+<path d="M341 279L682 197 M437 505L764 394" stroke="#8ba6b7" stroke-width="4" opacity=".55"/>
+<path d="M680 185C759 186 805 245 790 314C779 367 751 400 730 418" fill="none" stroke="#163247" stroke-width="12"/>
+<path d="M678 185C747 192 788 253 775 319" fill="none" stroke="#7798a9" stroke-width="3" opacity=".7"/>
+<ellipse cx="381" cy="393" rx="161" ry="130" transform="rotate(-19 381 393)" fill="url(#face)" stroke="#152f42" stroke-width="10"/>
+<ellipse cx="381" cy="393" rx="130" ry="99" transform="rotate(-19 381 393)" fill="none" stroke="#8eabbd" stroke-width="4" opacity=".9"/>
+<ellipse cx="381" cy="393" rx="97" ry="76" transform="rotate(-19 381 393)" fill="#1f4055" stroke="#112b3e" stroke-width="9"/>
+<ellipse cx="381" cy="393" rx="52" ry="40" transform="rotate(-19 381 393)" fill="#b2aa8b" stroke="#263c43" stroke-width="8"/>
+<ellipse cx="381" cy="393" rx="29" ry="23" transform="rotate(-19 381 393)" fill="#203b47" stroke="#e2c787" stroke-width="5"/>
+<g fill="#132838" stroke="#96b0be" stroke-width="3"><circle cx="278" cy="346" r="10"/><circle cx="336" cy="293" r="10"/><circle cx="449" cy="318" r="10"/><circle cx="485" cy="411" r="10"/><circle cx="422" cy="478" r="10"/><circle cx="300" cy="458" r="10"/></g>
+<path d="M799 273L960 218L982 239L819 297Z" fill="url(#shaft)" stroke="#485759" stroke-width="4"/>
+<ellipse cx="972" cy="229" rx="15" ry="12" transform="rotate(-19 972 229)" fill="#a5a897" stroke="#45535a" stroke-width="4"/>
+<path d="M874 245L885 270 M916 232L927 257" stroke="#566365" stroke-width="3" opacity=".8"/>
+<g stroke="#527387" stroke-width="2" fill="none"><path d="M383 253L284 171H122"/><path d="M780 391L895 474H1063"/><path d="M923 246L1004 176H1104"/></g>
+<g font-family="Arial,sans-serif" font-size="15" fill="#304f61"><text x="122" y="162">Front cover / hub</text><text x="904" y="467">Mounting flange</text><text x="1010" y="167">Output shaft</text></g>
+<text x="76" y="641" fill="#677d87" font-family="Arial,sans-serif" font-size="13">Source: PLANETARY_GEARBOX_R3_ASSEMBLED_COMPLETE.pdf, general assembly drawing, sheet 1</text>
+<text x="77" y="665" fill="#9a563c" font-family="Arial,sans-serif" font-size="13" font-weight="bold">ILLUSTRATIVE REFERENCE ONLY · Original finished-assembly screenshot still required</text>
+</svg>
