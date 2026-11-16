@@ -2,7 +2,7 @@
 
 A complete static portfolio for **https://reza-babapiri.github.io/engineering-portfolio/**.
 
-14 documented case studies across mechanical design, embedded robotics, control systems, automotive simulation and computer vision. This edition includes the preliminary Industrial Sheet Metal Enclosure case study.
+15 documented case studies across mechanical design, embedded robotics, control systems, automotive simulation and computer vision. This edition includes the Industrial Sheet Metal Enclosure and Planetary Gearbox/Carrier FEA case studies.
 
 ## Run locally
 
@@ -21,8 +21,8 @@ The accompanying Persian HTML guide gives detailed instructions and a browser up
 ## Contents
 
 - `index.html` — responsive homepage with search and discipline filters
-- `projects/` — 14 complete case-study pages with section navigation and expandable evidence images
-- `projects.json` — 14 original project metadata objects
+- `projects/` — 15 complete case-study pages with section navigation and expandable evidence images
+- `projects.json` — 15 original project metadata objects
 - `assets/projects/` — existing original project images and clearly identified illustrative workflows
 - `assets/fonts/` — local Inter font and its SIL Open Font License
 - `pdfs/` — five category PDFs, the portfolio overview and the enclosure report
@@ -48,3 +48,7 @@ Site interactions use plain JavaScript. Fonts are bundled locally; no analytics 
 
 - https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop
 - https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+## Planetary gearbox / carrier FEA (November 2026)
+
+`projects/planetary-gearbox.html` is a public preliminary numerical case study with transparent limitations. The two published SVGs (`assets/projects/planetary-gearbox-schematic.svg` and `assets/projects/planet-carrier-convergence.svg`) are explicitly identified as a conceptual cover and a data-driven chart, **not** author-origin CAD/ANSYS screenshots. The original screenshot gallery, browser MP4 and 10-page PDF are bundled separately for media upload; the site does not claim those binary files are hosted until they have been committed.
