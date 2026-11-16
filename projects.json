@@ -1,5 +1,70 @@
 [
   {
+    "id": "planetary-gearbox",
+    "cat": "mechanical",
+    "title": "Planetary Gearbox | Carrier CAD & FEA",
+    "eyebrow": "LATEST COMPLETED PROJECT · SOLIDWORKS + ANSYS",
+    "subtitle": "Complete SOLIDWORKS assembly and documented ANSYS planet-carrier groove-root stress analysis",
+    "image": "planetary-gearbox-assembly.webp",
+    "tags": [
+      "SOLIDWORKS",
+      "ANSYS",
+      "FEA",
+      "STEP"
+    ],
+    "overview": "Self-directed CAD/FEA portfolio case study. Exploded SOLIDWORKS assembly animation; STEP geometry variants of the planet carrier; R0.2 mm groove-root fillet addition; simplified static structural analysis in ANSYS 2025 R2 Student. No physical testing, validated transmission performance, or production release claimed.",
+    "approach": [
+      "Documented author-supplied SOLIDWORKS exploded-view animation and evaluated the planet carrier's output shaft/groove geometry.",
+      "Compared sharp inner groove corners with a revised R0.2 mm groove-root fillet model.",
+      "Applied generic Structural Steel (E 200 GPa, yield 250 MPa), simplified three-planet bearing loads, +8180 N·mm torque and idealized cylindrical support.",
+      "Performed targeted Tet10 mesh refinements and isolated planet-bearing reaction checks."
+    ],
+    "results": [
+      "Latest revised full-load peak von Mises: 105.40 MPa; max total displacement: 0.0063473 mm.",
+      "Final mesh: 91,834 nodes and 54,860 elements; average element quality 0.69311, minimum 0.096109.",
+      "Nominal yield-stress screening ratio: 2.37; not a validated factor of safety.",
+      "Standalone Planet B reaction changed from 119.22 to 121.87 N after local bore mesh refinement, demonstrating mesh-related sensitivity."
+    ],
+    "limitations": "Linear-elastic screening only: no tested physical system, validated bearing stiffness, gear tooth contact, fatigue loading, manufacturing tolerances, gear-load derivation or formal mesh independence. Published SOLIDWORKS and ANSYS visuals document the digital model and numerical outputs; they do not substitute for validation.",
+    "evidence": "Source images from the user's SOLIDWORKS exploded animation and original ANSYS solver screenshots have been published in this repository alongside the browser-compatible MP4 and the written case study. The model is a self-directed digital design and simulation exercise, not physical validation.",
+    "engineering_question": "How does rounding sharp internal corners of a planet carrier's shaft groove change the predicted local static stress and mesh sensitivity?",
+    "role": "Self-directed CAD assembly documentation, geometric modification, ANSYS setup and FEA result interpretation.",
+    "decisions": [
+      "Add R0.2 mm groove-root fillets while preserving major carrier dimensions.",
+      "Retain local mesh controls in the groove while checking Planet B pin-hole load sensitivity separately.",
+      "Report the numerical result and unresolved modelling assumptions explicitly rather than claim production readiness."
+    ],
+    "verification": "Recorded R0.2 local mesh series: 101.63 MPa (0.20 mm), 105.82 MPa (0.15 mm), 105.16 MPa (0.125 mm). Final after Planet B bore mesh change: 105.40 MPa. A and C independent bearing force reactions matched entered magnitudes, while B demonstrated discrete load sensitivity.",
+    "reflection": "Stress contour plausibility, local mesh sensitivity, proper load transfer and boundary-condition realism must be distinguished. A low changing peak stress is evidence of initial numerical stability, not proof of mechanical safety.",
+    "metrics": [
+      "R0.2 mm GROOVE FILLET",
+      "105.40 MPa PEAK STRESS",
+      "54,860 TET10 ELEMENTS"
+    ],
+    "gallery": [
+      {
+        "src": "planetary-gearbox-assembly.webp",
+        "caption": "Original SOLIDWORKS fully assembled gearbox, cropped to eliminate screenshot margins."
+      },
+      {
+        "src": "planetary-gearbox-solidworks-exploded-detail.jpg",
+        "caption": "Original SOLIDWORKS exploded assembly frame showing component arrangement."
+      },
+      {
+        "src": "planet-carrier-local-mesh.jpg",
+        "caption": "Original ANSYS Mechanical local Tet10 mesh at the groove-root region."
+      },
+      {
+        "src": "planet-carrier-vonmises-final.jpg",
+        "caption": "Original ANSYS von Mises stress: recorded local maximum 105.40 MPa."
+      },
+      {
+        "src": "planet-carrier-deformation-final.jpg",
+        "caption": "Original ANSYS total deformation: recorded maximum 0.0063473 mm."
+      }
+    ]
+  },
+  {
     "id": "sheet-metal-enclosure",
     "cat": "mechanical",
     "title": "Industrial Sheet Metal Enclosure",
@@ -793,56 +858,6 @@
         "src": "vision_workflow.svg",
         "caption": "Illustrative engineering workflow based on the methods described in the documentation."
       }
-    ]
-  },
-  {
-    "id": "planetary-gearbox",
-    "cat": "mechanical",
-    "title": "Planetary Gearbox | Carrier CAD & FEA",
-    "eyebrow": "PERSONAL PROJECT · SOLIDWORKS + ANSYS",
-    "subtitle": "Fully assembled SOLIDWORKS gearbox and ANSYS carrier groove-root study",
-    "image": "planetary-gearbox-assembly.webp",
-    "tags": [
-      "SOLIDWORKS",
-      "ANSYS",
-      "FEA",
-      "STEP"
-    ],
-    "overview": "Self-directed CAD/FEA portfolio case study. Exploded SOLIDWORKS assembly animation; STEP geometry variants of the planet carrier; R0.2 mm groove-root fillet addition; simplified static structural analysis in ANSYS 2025 R2 Student. No physical testing, validated transmission performance, or production release claimed.",
-    "approach": [
-      "Documented author-supplied SOLIDWORKS exploded-view animation and evaluated the planet carrier's output shaft/groove geometry.",
-      "Compared sharp inner groove corners with a revised R0.2 mm groove-root fillet model.",
-      "Applied generic Structural Steel (E 200 GPa, yield 250 MPa), simplified three-planet bearing loads, +8180 N·mm torque and idealized cylindrical support.",
-      "Performed targeted Tet10 mesh refinements and isolated planet-bearing reaction checks."
-    ],
-    "results": [
-      "Latest revised full-load peak von Mises: 105.40 MPa; max total displacement: 0.0063473 mm.",
-      "Final mesh: 91,834 nodes and 54,860 elements; average element quality 0.69311, minimum 0.096109.",
-      "Nominal yield-stress screening ratio: 2.37; not a validated factor of safety.",
-      "Standalone Planet B reaction changed from 119.22 to 121.87 N after local bore mesh refinement, demonstrating mesh-related sensitivity."
-    ],
-    "limitations": "Linear-elastic screening only: no tested physical system, validated bearing stiffness, gear tooth contact, fatigue loading, manufacturing tolerances, gear-load derivation or formal mesh independence. Published SOLIDWORKS and ANSYS visuals document the digital model and numerical outputs; they do not substitute for validation.",
-    "evidence": "Source images from the user's SOLIDWORKS exploded animation and original ANSYS solver screenshots have been published in this repository alongside the browser-compatible MP4 and the written case study. The model is a self-directed digital design and simulation exercise, not physical validation.",
-    "engineering_question": "How does rounding sharp internal corners of a planet carrier's shaft groove change the predicted local static stress and mesh sensitivity?",
-    "role": "Self-directed CAD assembly documentation, geometric modification, ANSYS setup and FEA result interpretation.",
-    "decisions": [
-      "Add R0.2 mm groove-root fillets while preserving major carrier dimensions.",
-      "Retain local mesh controls in the groove while checking Planet B pin-hole load sensitivity separately.",
-      "Report the numerical result and unresolved modelling assumptions explicitly rather than claim production readiness."
-    ],
-    "verification": "Recorded R0.2 local mesh series: 101.63 MPa (0.20 mm), 105.82 MPa (0.15 mm), 105.16 MPa (0.125 mm). Final after Planet B bore mesh change: 105.40 MPa. A and C independent bearing force reactions matched entered magnitudes, while B demonstrated discrete load sensitivity.",
-    "reflection": "Stress contour plausibility, local mesh sensitivity, proper load transfer and boundary-condition realism must be distinguished. A low changing peak stress is evidence of initial numerical stability, not proof of mechanical safety.",
-    "metrics": [
-      "R0.2 mm GROOVE FILLET",
-      "105.40 MPa PEAK STRESS",
-      "54,860 TET10 ELEMENTS"
-    ],
-    "gallery": [
-      {"src": "planetary-gearbox-assembly.webp", "caption": "Original SOLIDWORKS fully assembled gearbox, cropped to eliminate screenshot margins."},
-      {"src": "planetary-gearbox-solidworks-exploded-detail.jpg", "caption": "Original SOLIDWORKS exploded assembly frame showing component arrangement."},
-      {"src": "planet-carrier-local-mesh.jpg", "caption": "Original ANSYS Mechanical local Tet10 mesh at the groove-root region."},
-      {"src": "planet-carrier-vonmises-final.jpg", "caption": "Original ANSYS von Mises stress: recorded local maximum 105.40 MPa."},
-      {"src": "planet-carrier-deformation-final.jpg", "caption": "Original ANSYS total deformation: recorded maximum 0.0063473 mm."}
     ]
   }
 ]
