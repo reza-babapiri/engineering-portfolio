@@ -49,6 +49,14 @@ Site interactions use plain JavaScript. Fonts are bundled locally; no analytics 
 - https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop
 - https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
-## Planetary gearbox / carrier FEA (November 2026)
+## Latest featured project: Planetary Gearbox (November 2026)
 
-`projects/planetary-gearbox.html` is a public preliminary numerical case study with transparent limitations. The two published SVGs (`assets/projects/planetary-gearbox-schematic.svg` and `assets/projects/planet-carrier-convergence.svg`) are explicitly identified as a conceptual cover and a data-driven chart, **not** author-origin CAD/ANSYS screenshots. The original screenshot gallery, browser MP4 and 10-page PDF are bundled separately for media upload; the site does not claim those binary files are hosted until they have been committed.
+- Featured case study: `projects/planetary-gearbox.html`.
+- Home-page hero and first mechanical-design card point to the completed **digital CAD + FEA case study**, not to a future project.
+- Real, tightly cropped SOLIDWORKS assembled gearbox capture: `assets/projects/planetary-gearbox-assembly.webp`.
+- Original ANSYS Mechanical local carrier mesh: `assets/projects/planet-carrier-local-mesh.jpg`.
+- Original SOLIDWORKS exploded-view MP4, ANSYS von Mises and deformation results, mesh-sensitivity chart, and technical report are included in the public repository.
+- Results are model-specific and preliminary: **105.40 MPa** recorded peak von Mises and **0.0063473 mm** recorded maximum displacement. The assumed material's nominal yield-stress ratio is not a validated service safety factor.
+- The gearbox has been removed from the public *On the workbench / In progress* roadmap. The V6 engine and robotics work remain as described there.
+
+The project is a documented self-directed digital engineering exercise. No physical prototype, contact or fatigue validation, or manufacturing release is claimed.
