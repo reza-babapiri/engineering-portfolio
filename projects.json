@@ -801,7 +801,7 @@
     "title": "Planetary Gearbox | Carrier CAD & FEA",
     "eyebrow": "PERSONAL PROJECT · SOLIDWORKS + ANSYS",
     "subtitle": "Digital exploded assembly and revised carrier-groove finite-element stress study",
-    "image": "planetary-gearbox-schematic.svg",
+    "image": "planetary-gearbox-solidworks-exploded-mid.jpg",
     "tags": [
       "SOLIDWORKS",
       "ANSYS",
@@ -822,7 +822,7 @@
       "Standalone Planet B reaction changed from 119.22 to 121.87 N after local bore mesh refinement, demonstrating mesh-related sensitivity."
     ],
     "limitations": "Linear-elastic screening only: no tested physical system, validated bearing stiffness, gear tooth contact, fatigue loading, manufacturing tolerances, gear-load derivation or formal mesh independence. Uploaded simulation screenshots support recorded results but remain in a separate evidence bundle until web media assets are uploaded.",
-    "evidence": "Original STEP geometry pair, 3-second SOLIDWORKS AVI converted to MP4, ANSYS screenshots and a 10-page technical report are supplied separately. On-site images currently include vector diagrams derived from recorded data; they are not original CAD screenshots.",
+    "evidence": "Source images from the user's SOLIDWORKS exploded animation and original ANSYS solver screenshots have been published in this repository alongside the browser-compatible MP4 and the written case study. The model is a self-directed digital design and simulation exercise, not physical validation.",
     "engineering_question": "How does rounding sharp internal corners of a planet carrier's shaft groove change the predicted local static stress and mesh sensitivity?",
     "role": "Self-directed CAD assembly documentation, geometric modification, ANSYS setup and FEA result interpretation.",
     "decisions": [
@@ -839,12 +839,40 @@
     ],
     "gallery": [
       {
-        "src": "planetary-gearbox-schematic.svg",
-        "caption": "Clearly labelled conceptual cover diagram."
+        "src": "planetary-gearbox-solidworks-exploded-mid.jpg",
+        "caption": "Actual SOLIDWORKS exploded assembly animation still."
       },
       {
-        "src": "planet-carrier-convergence.svg",
-        "caption": "Mesh sensitivity chart transcribed from the recorded ANSYS outputs."
+        "src": "planetary-gearbox-solidworks-exploded-detail.jpg",
+        "caption": "Cropped real SOLIDWORKS gearbox assembly animation view."
+      },
+      {
+        "src": "planet-carrier-vonmises-final.jpg",
+        "caption": "Original ANSYS result: max von Mises 105.40 MPa."
+      },
+      {
+        "src": "planet-carrier-deformation-final.jpg",
+        "caption": "Original ANSYS result: max deformation 0.0063473 mm."
+      },
+      {
+        "src": "planet-carrier-local-mesh.jpg",
+        "caption": "Original ANSYS mesh around critical groove."
+      },
+      {
+        "src": "planet-carrier-element-quality.jpg",
+        "caption": "ANSYS mesh-quality panel showing minimum 0.096109."
+      },
+      {
+        "src": "planet-carrier-reaction-force.jpg",
+        "caption": "Original ANSYS force-reaction result."
+      },
+      {
+        "src": "planet-carrier-reaction-moment.jpg",
+        "caption": "Original ANSYS moment-reaction result."
+      },
+      {
+        "src": "planet-carrier-bearing-load.jpg",
+        "caption": "Original ANSYS bearing load setup."
       }
     ]
   }
