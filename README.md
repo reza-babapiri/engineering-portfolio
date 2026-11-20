@@ -2,7 +2,7 @@
 
 A complete static portfolio for **https://reza-babapiri.github.io/engineering-portfolio/**.
 
-15 documented case studies across mechanical design, embedded robotics, control systems, automotive simulation and computer vision. This edition includes the Industrial Sheet Metal Enclosure and Planetary Gearbox/Carrier FEA case studies.
+16 documented case studies across mechanical design, embedded robotics, control systems, automotive simulation and computer vision. This edition includes the Industrial Sheet Metal Enclosure and Planetary Gearbox/Carrier FEA case studies.
 
 ## Run locally
 
@@ -21,8 +21,8 @@ The accompanying Persian HTML guide gives detailed instructions and a browser up
 ## Contents
 
 - `index.html` — responsive homepage with search and discipline filters
-- `projects/` — 15 complete case-study pages with section navigation and expandable evidence images
-- `projects.json` — 15 original project metadata objects
+- `projects/` — 16 complete case-study pages with section navigation and expandable evidence images
+- `projects.json` — 16 project metadata objects
 - `assets/projects/` — existing original project images and clearly identified illustrative workflows
 - `assets/fonts/` — local Inter font and its SIL Open Font License
 - `pdfs/` — five category PDFs, the portfolio overview and the enclosure report
@@ -60,3 +60,7 @@ Site interactions use plain JavaScript. Fonts are bundled locally; no analytics 
 - The gearbox has been removed from the public *On the workbench / In progress* roadmap. The V6 engine and robotics work remain as described there.
 
 The project is a documented self-directed digital engineering exercise. No physical prototype, contact or fatigue validation, or manufacturing release is claimed.
+
+## Cryogenic Support FEA validation (November 2026)
+
+A new, deliberately secondary **independent numerical validation study** is documented at `projects/cryogenic-support-validation.html` with technical detail in `reports/Cryogenic_Support_FEA_Validation_Report.md`. It verifies heat flow, axial deformation and midspan stress against analytical results and records mesh sensitivity and one-way thermal-to-structural loading. The cover is a **labeled vector visualization**, not a solver capture. Original ANSYS screenshots form part of a separately prepared eight-page author PDF. This project is educational: no physical testing, cryogenic material qualification or industrial hardware design is claimed.

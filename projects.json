@@ -859,5 +859,54 @@
         "caption": "Illustrative engineering workflow based on the methods described in the documentation."
       }
     ]
+  },
+  {
+    "id": "cryogenic-support-validation",
+    "cat": "mechanical",
+    "title": "Cryogenic Support | Thermal & Structural FEA Validation",
+    "eyebrow": "SELF-DIRECTED · SIMULATION VERIFICATION",
+    "subtitle": "ANSYS heat conduction, axial tensile FEA, one-way thermal–structural coupling and mesh refinement",
+    "image": "cryogenic-support-validation.svg",
+    "tags": [
+      "ANSYS 2025 R2",
+      "Steady-State Thermal",
+      "Static Structural",
+      "Mesh Verification"
+    ],
+    "overview": "Independent educational model of a 100 mm long, 3.568 mm diameter cylindrical support. Verified heat flow and axial responses against analytical predictions; imported temperature field into structural analysis. No industrial hardware, physical experiment or company affiliation claimed.",
+    "approach": [
+      "Created a constant-property isotropic training material, model geometry and prescribed 300 K/77 K face temperatures.",
+      "Extracted boundary-integrated Heat Reaction and compared heat flux with one-dimensional Fourier conduction.",
+      "Applied 1000 N tensile load and fully fixed opposing face; verified midspan Z normal stress with Probe.",
+      "Compared mechanical-only, thermal-only and combined one-way coupled responses and performed nominal mesh refinement."
+    ],
+    "results": [
+      "Heat Reaction: 0.33444 W versus analytical 0.334453 W.",
+      "Midspan axial stress: 100.01 MPa versus analytical 100.0139 MPa.",
+      "Mechanical-only max deformation: 0.049961 mm; thermal-only shortening: 0.12558 mm; combined shortening magnitude: 0.075618 mm.",
+      "Global deformation stabilized with mesh refinement; fixed-support local maximum stress remained mesh-sensitive."
+    ],
+    "limitations": "Educational verification only, using assumed constant E, k and CTE. No physical testing, experimental cryogenic material properties, actual support hardware or joint interfaces; no verified local peak stress convergence, fatigue, vacuum radiation, buckling or thermal cycling.",
+    "evidence": "Original user-provided ANSYS Mechanical 2025 R2 Student screenshots support the measurements; a companion illustrated PDF report was produced separately. Repository has the numerical Markdown report and a clearly labeled SVG visualization; native solver project files are not provided.",
+    "engineering_question": "Can thermal flow, tensile strain and cryogenic contraction of a simple support be verified against analytical physics before a higher-fidelity design?",
+    "role": "I independently constructed the ANSYS model, evaluated its thermal and structural load cases, refined the mesh and compared outputs with analytical calculations.",
+    "decisions": [
+      "Used a simple cylindrical geometry to allow independent closed-form numerical checks.",
+      "Kept axial stress verification at midspan to avoid interpreting the fixed-edge local maximum as a nominal axial stress.",
+      "Separated thermal-only, mechanical-only and combined loading to interpret contraction and local restraint stresses."
+    ],
+    "verification": "Analytical comparisons for integrated heat rate, flux, F/A axial stress and FL/(AE) extension; three thermal mesh levels, three structural mesh snapshots and a midspan normal-stress probe.",
+    "reflection": "Accurate global results do not validate fixed-end local peaks; physically realistic cryogenic design requires temperature-dependent data and realistic contacts.",
+    "metrics": [
+      "0.33444 W HEAT FLOW",
+      "100.01 MPa MIDSPAN",
+      "0.12558 mm CONTRACTION"
+    ],
+    "gallery": [
+      {
+        "src": "cryogenic-support-validation.svg",
+        "caption": "Original vector summary derived from recorded ANSYS results; not an ANSYS screenshot."
+      }
+    ]
   }
 ]
