@@ -1,0 +1,16 @@
+case,quantity,ansys_value,unit,nominal_mesh_size_mm,notes
+thermal_mesh_coarse,Heat Reaction,0.31740,W,3.0,Temperature boundary
+thermal_mesh_medium,Heat Reaction,0.33026,W,1.5,Temperature boundary
+thermal_mesh_fine,Heat Reaction,0.33444,W,0.75,Temperature boundary
+mechanical_mesh_coarse,Maximum Total Deformation,0.054087,mm,,Initial coarse mesh
+mechanical_mesh_medium,Maximum Total Deformation,0.049962,mm,0.75,Mechanical-only
+mechanical_mesh_fine,Maximum Total Deformation,0.049961,mm,0.5,Mechanical-only
+mechanical_mesh_medium,Maximum Equivalent Stress,122.62,MPa,0.75,Local fixed end; not converged
+mechanical_mesh_fine,Maximum Equivalent Stress,132.72,MPa,0.5,Local fixed end; not converged
+mechanical_mesh_fine,Midspan Axial Normal Stress,100.01,MPa,0.5,Probe at node 87457
+thermal_only_fine,Maximum Directional Displacement Z,0.12558,mm,0.5,Magnitude of contraction
+thermal_only_fine,Maximum Total Deformation,0.12562,mm,0.5,
+thermal_only_fine,Maximum Equivalent Stress,41.613,MPa,0.5,Local fixed end
+combined_fine,Maximum Directional Displacement Z,0.075618,mm,0.5,Magnitude of net contraction
+combined_fine,Maximum Total Deformation,0.075735,mm,0.5,
+combined_fine,Maximum Equivalent Stress,114.87,MPa,0.5,Local fixed end

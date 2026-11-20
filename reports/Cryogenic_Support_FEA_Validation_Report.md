@@ -140,3 +140,10 @@ The material parameters are illustrative **training values**. The study supports
 - No claim of physical experimental validation or association with a specific quantum-hardware company is made.
 
 **Author:** Reza Babapiri · **Independent engineering portfolio / simulation verification · 2026**
+
+## Reproducible numerical checks
+
+- [Python analytical check script](../code/cryogenic_validation_checks.py) - standard-library-only calculations and signed/magnitude conventions.
+- [Recorded numerical results](../reports/cryogenic_support_validation_results.csv) - manual transcription from supplied ANSYS screenshots; not a raw solver export.
+
+The script verifies nominal and global quantities only; it does not establish convergence of fixed-end pointwise stresses.
